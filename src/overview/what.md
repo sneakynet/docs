@@ -15,22 +15,22 @@ Cisco 2811 Integrated Services Router.
 
 ```d2
 ISR : Cisco ISR {
-  link: /equipment/isr.md
+  link: /equipment/telco/isr.md
   icon: https://icons.terrastruct.com/infra%2F019-network.svg
 }
-Dialfire : Patton Electronics Dialfire { 
-  link: /equipment/dialfire.md
+Dialfire : Patton Electronics Dialfire {
+  link: /equipment/telco/dialfire.md
   icon: https://icons.terrastruct.com/essentials%2F112-server.svg
 }
-Zhone : Zhone Channel Bank { 
-  link: /equipment/zhone.md 
+Zhone : Zhone Channel Bank {
+  link: /equipment/telco/zhone.md
   icon: https://icons.terrastruct.com/infra%2F013-transfer.svg
 }
-Adit : Adit Channel Bank { 
-  link: /equipment/adit.md 
+Adit : Adit Channel Bank {
+  link: /equipment/telco/adit.md
   icon: https://icons.terrastruct.com/infra%2F013-transfer.svg
 }
-  
+
 ISR <-> Dialfire : T1 PRI
 ISR <-> Zhone : CAS T1
 ISR <-> Adit : CAS T1
@@ -47,19 +47,19 @@ Connectivity is achieved through a managed HP Ethernet Switch.
 
 ```d2
 ISR : Cisco ISR {
-  link: /equipment/isr.md
+  link: /equipment/telco/isr.md
   icon: https://icons.terrastruct.com/infra%2F019-network.svg
 }
-EtherSwitch : HP Ethernet Switch { 
-  link: /equipment/etherswitch.md
+EtherSwitch : HP Ethernet Switch {
+  link: /equipment/telco/etherswitch.md
   icon: https://icons.terrastruct.com/infra%2F014-network.svg
 }
 Server : Services Host {
-  link: /equipment/server.md
+  link: /equipment/telco/server.md
   icon: https://icons.terrastruct.com/tech%2F022-server.svg
 }
 Internet : Internet {
-  link: /equipment/internet.md
+  link: /equipment/other/internet.md
   icon: https://icons.terrastruct.com/essentials%2F140-internet.svg
 }
 
