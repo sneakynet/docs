@@ -10,4 +10,5 @@
     - [Zhone](./equipment/telco/zhone.md)
     - [Adit 600](./equipment/telco/adit.md)
   - [Office](./equipment/office/index.md)
+    - [BCM 50](./equipment/office/bcm50.md)
   - [Other](./equipment/other/index.md)
