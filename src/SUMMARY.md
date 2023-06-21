@@ -11,4 +11,5 @@
     - [Adit 600](./equipment/telco/adit.md)
   - [Office](./equipment/office/index.md)
     - [BCM 50](./equipment/office/bcm50.md)
+    - [Juniper SRX](./equipment/office/srx220.md)
   - [Other](./equipment/other/index.md)
