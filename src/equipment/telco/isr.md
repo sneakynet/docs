@@ -1,5 +1,7 @@
 # Cisco ISR
 
+![Integrated Services Router](/img/isr.png)
+
 The Cisco Integrated Services Router (ISR) is a 1U platform designed
 for dense routing applications where size matters.  This chassis was
 originally designed as a branch office router and was introduced to

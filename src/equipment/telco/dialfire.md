@@ -1,5 +1,7 @@
 # Patton Electronics Dialfire 2960
 
+![Dialfire 2960](/img/dialfire.png)
+
 The spectacularly named Dialfire 2960 is a Remote Access Server.  This
 is a special class of device that includes all the components for
 dial-in networking into one RU of space.  The device has dual power

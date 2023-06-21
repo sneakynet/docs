@@ -1,5 +1,7 @@
 # Zhone Z-Plex-10-24S
 
+![Channel Bank](/img/zhone.png)
+
 The TDM network normally passes around data in bundles on T1 carriers.
 This is a channelized medium, and is capable of carrying a very dense
 bundle of calls over a single cable.  To make individual numbers

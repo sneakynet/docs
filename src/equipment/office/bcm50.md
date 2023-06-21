@@ -1,5 +1,7 @@
 # Nortel Business Communications Manager 50
 
+![BCM 50](/img/bcm50.png)
+
 The Nortel BCM50 is a small office telephone system.  Commonly
 referred to as a Private Branch Exchange, the BCM50 has more features
 in common with an advanced key system than a true PBX, but still packs
