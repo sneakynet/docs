@@ -5,5 +5,6 @@
   - [Why Is SneakyNet](./overview/why.md)
 - [Equipment](./equipment/index.md)
   - [Telco](./equipment/telco/index.md)
+    - [Cisco ISR](./equipment/telco/isr.md)
   - [Office](./equipment/office/index.md)
   - [Other](./equipment/other/index.md)
