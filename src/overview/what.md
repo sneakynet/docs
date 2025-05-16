@@ -11,7 +11,7 @@ TDM Circuit Switched Network
 
 The circuit switched network is, as the name implies, switched over
 continuously allocated circuits.  At the heart of the network is a
-Cisco 2811 Integrated Services Router.
+Cisco 3825 Integrated Services Router.
 
 ```d2
 ISR : Cisco ISR {
@@ -41,18 +41,13 @@ IP Packet Data Network
 
 The IP packet network is a modern-ish packet data network supporting
 Internet Protocol (IP) as well as other more exotic protocols.  At the
-heart of the network is a Cisco 2811 Integrated Services Router,
+heart of the network is a Cisco 3825 Integrated Services Router,
 though most services are hosted on a dedicated x86 server.
-Connectivity is achieved through a managed HP Ethernet Switch.
 
 ```d2
 ISR : Cisco ISR {
   link: /equipment/telco/isr.md
   icon: https://icons.terrastruct.com/infra%2F019-network.svg
-}
-EtherSwitch : HP Ethernet Switch {
-  link: /equipment/telco/etherswitch.md
-  icon: https://icons.terrastruct.com/infra%2F014-network.svg
 }
 Server : Services Host {
   link: /equipment/telco/server.md
@@ -63,9 +58,8 @@ Internet : Internet {
   icon: https://icons.terrastruct.com/essentials%2F140-internet.svg
 }
 
-Internet <-> EtherSwitch : Ethernet
-ISR <-> EtherSwitch : LACP
-Server <-> EtherSwitch : Ethernet
+Internet <-> ISR : Ethernet
+Server <-> ISR : Ethernet
 ```
 
 The entire network is self contained, and hosts all services

@@ -9,7 +9,6 @@
     - [Dialfire](./equipment/telco/dialfire.md)
     - [Zhone](./equipment/telco/zhone.md)
     - [Adit 600](./equipment/telco/adit.md)
-    - [HP Switch](./equipment/telco/etherswitch.md)
     - [Services Host](./equipment/telco/server.md)
   - [Office](./equipment/office/index.md)
     - [BCM 50](./equipment/office/bcm50.md)
