@@ -8,3 +8,6 @@ title = "SneakyNet Technical Overview"
 [preprocessor.d2-go]
 layout = "elk"
 theme_id = 0
+
+[output.html]
+additional-css = ["custom.css"]
