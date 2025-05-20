@@ -16,3 +16,8 @@
   - [Other](./equipment/other/index.md)
 - [Technology]()
   - [Dial-Up](./tech/dialup.md)
+- [Service Areas](./service/index.md)
+  - [VCFSW25](./service/vcfsw25/index.md)
+    - [Inside Plant](./service/vcfsw25/inside.md)
+    - [Outside Plant](./service/vcfsw25/outside.md)
+    - [IP Services](./service/vcfsw25/ip.md)
