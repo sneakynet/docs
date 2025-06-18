@@ -71,16 +71,6 @@ co -> nybbles : Trunk 2 (XXX Feet)
 nybbles -> will : Trunk 2 (XXX Feet)
 
 # Trunk Line 3
-maclib : |md
-Name: Macintosh Librarian
----
-Table: 16,17
-
-Service:
-* 3:1 - Analog POTS
-|
-maclib.shape: rectangle
-
 ibmrt : |md
 Name: IBM RT PC
 ---
@@ -91,8 +81,7 @@ Service:
 |
 ibmrt.shape: rectangle
 
-co -> maclib : Trunk 3 (XXXX feet)
-maclib -> ibmrt : Trunk 3 (XXXX feet)
+co -> ibmrt : Trunk 3 (XXXX feet)
 
 # Trunk Line 4
 forgotten_machines : |md
@@ -145,6 +134,17 @@ co -> techav : Trunk 5 (XXXX feet)
 techav -> regdesk : Trunk 5 (XXXX feet)
 
 # Trunk Line 6
+genericable : |md
+Genericable
+---
+Table: 5
+
+Service
+* 6:2 - POTS (0/0/0:15)
+* 6:3 - POTS (0/0/0:19)
+|
+genericable.shape: rectangle
+
 mesalanius : |md
 Name: Team Mesalanius
 ---
@@ -155,7 +155,8 @@ Service:
 |
 mesalanius.shape: rectangle
 
-co -> mesalanius : Trunk 6 (XXXX Feet)
+co -> genericable : Trunk 6 (XXXX Feet)
+genericable -> mesalanius : Trunk 6 (XXXX Feet)
 
 # Trunk Line 7
 forgotten_it : |md
