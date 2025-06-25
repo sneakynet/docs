@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:1.21-alpine AS mdbook
+FROM docker.io/library/golang:1.24-alpine AS mdbook
 RUN go install github.com/Vaelatern/mdbook-d2-go@latest
 
 FROM ghcr.io/peaceiris/mdbook:v0.4.34 AS build
