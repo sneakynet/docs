@@ -1,4 +1,4 @@
-# Carrier Access Corperation Adit 600
+# Carrier Access Corporation Adit 600
 
 ![Channel Bank](/img/adit.png)
 
