@@ -6,8 +6,9 @@ contains central infrastructure as well as distribution cabling.  The
 wirecenters are linked in a centra/remote architecture, with the
 remote being fed by 2 T1 circuits and a 1000BaseSX circuit.
 
-Using the advanced capabilities of the Shady Rate Interface, some
-exhibitor circuits "loop through" other customer premises.  These
+Using the advanced capabilities of the [Shady Rate
+Interface](http://www.dms-100.net/telephony/general/shady-rate-interface/),
+some exhibitor circuits "loop through" other customer premises.  These
 circuits are on existing trunk infrastructure, but are not present on
 the interface equipment at these customer sites.
 
