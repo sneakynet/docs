@@ -21,3 +21,5 @@
     - [Inside Plant](./service/vcfsw25/inside.md)
     - [Outside Plant](./service/vcfsw25/outside.md)
     - [IP Services](./service/vcfsw25/ip.md)
+  - [VCFMW20](./service/vcfmw20/index.md)
+    - [Inside Plant](./service/vcfmw20/inside.md)
