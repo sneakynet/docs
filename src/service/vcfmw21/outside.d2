@@ -1,0 +1,54 @@
+co : CO {
+  ccr : CCR {
+    sfp5
+    sfp6
+    sfp7
+  }
+}
+
+remote : Remote Switching Complex {
+  optimux1 : Optimux 1 {
+    sfp1
+    sfp2
+    sfp3
+  }
+}
+
+towerB2 : Tower B2 {
+  icx00 : ICX00 {
+    1/3/1
+  }
+}
+
+towerB6 : Tower B6 {
+  icx01 : ICX01 {
+    1/3/1
+  }
+}
+
+towerD2 : Tower D2 {
+  icx02 : ICX02 {
+    1/3/1
+  }
+}
+
+towerD6 : Tower D6 {
+  icx03 : ICX03 {
+    1/3/1
+  }
+}
+
+timing : Timing Rack {
+  ts0 : TimeSwitch0 {
+    28 : P28
+  }
+}
+
+co.ccr.sfp5 -> remote.optimux1.sfp1 : 10GBaseSR
+co.ccr.sfp6 -> towerD2.icx02.1/3/1 : 10GBaseSR
+co.ccr.sfp7 -> towerD6.icx03.1/3/1 : 10GBaseSR
+
+remote.optimux1.sfp2 -> towerB2.icx00.1/3/1 : 10GBaseSR
+remote.optimux1.sfp3 -> towerB6.icx01.1/3/1 : 10GBaseSR
+
+towerD2.icx02.1/3/2 -> timing.ts0.28 : 1GBaseSX

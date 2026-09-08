@@ -1,0 +1,29 @@
+remote : Remote Switching Complex {
+  shape: hexagon
+}
+
+icx00 : ICX00 {
+  1/1/1
+  1/1/2
+  1/1/3
+
+  1/3/1
+}
+
+sector00 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+sector01 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+sector02 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+remote -> icx00.1/3/1 : 10GBaseSR
+
+icx00.1/1/1 -> sector00 : 1GBaseT (Red)
+icx00.1/1/2 -> sector01 : 1GBaseT (Blue)
+icx00.1/1/3 -> sector02 : 1GBaseT (Green)

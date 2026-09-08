@@ -1,0 +1,50 @@
+co : Central Office {
+  shape: hexagon
+}
+
+icx02 : ICX02 {
+  1/1/1
+  1/1/2
+  1/1/3
+
+  1/3/1
+  1/3/2
+}
+
+sector06 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+sector07 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+sector08 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+time : Timing {
+  ts0 : TimeSwitch0 {
+    1 : P1
+    23 : P23
+    28 : P28
+  }
+}
+
+starlink : StarLink Terminal {
+  icon: https://icons.d2lang.com/infra%2F007-satellite.svg
+}
+
+jeff : Jeff Geerling {
+  icon: https://icons.d2lang.com/essentials%2F365-user.svg
+}
+
+co -> icx02.1/3/1 : 10GBaseSR
+
+icx02.1/1/1 -> sector06 : 1GBaseT (Red)
+icx02.1/1/2 -> sector07 : 1GBaseT (Blue)
+icx02.1/1/3 -> sector08 : 1GBaseT (Green)
+
+icx02.1/3/2 -> time.ts0.28 : 1GBaseSX
+time.ts0.1 -> jeff : 1GBaseT
+time.ts0.23 -> starlink : 1GBaseT

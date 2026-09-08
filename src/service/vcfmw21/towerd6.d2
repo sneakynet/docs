@@ -1,0 +1,29 @@
+co : Central Office {
+  shape: hexagon
+}
+
+icx03 : ICX03 {
+  1/1/1
+  1/1/2
+  1/1/3
+
+  1/3/1
+}
+
+sector09 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+sector10 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+sector11 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+co -> icx03.1/3/1 : 10GBaseSR
+
+icx03.1/1/1 -> sector09 : 1GBaseT (Red)
+icx03.1/1/2 -> sector10 : 1GBaseT (Blue)
+icx03.1/1/3 -> sector11 : 1GBaseT (Green)

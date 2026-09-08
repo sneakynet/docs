@@ -1,0 +1,84 @@
+net : NET-A {
+  ccr : CCR {
+    sfp11
+    sfp12
+    sfp5
+    sfp6
+    sfp7
+    sfp3
+    sfp4
+  }
+
+  sw0 : Switch0 {
+    13 : P13 (T-Mobile)
+    14 : P14 (AT&T Cellular)
+    15 : P15 (UPS)
+    16 : P16 (AP)
+    20 : P20 (Stargate)
+    22 : P22 (CME)
+    25 : P25 (Trk1/0)
+    26 : P26 (Trk1/1)
+  }
+
+  cme00 : CME {
+    ge0 : ge0/0
+  }
+
+  ccr.sfp11 -> sw0.25
+  ccr.sfp12 -> sw0.26
+  sw0.22 -> cme00.ge0
+
+}
+
+sg0 : Stargate {
+  icon: https://icons.terrastruct.com/infra%2F010-data-sharing.svg
+}
+
+ups0 : UPS {
+  icon: https://icons.terrastruct.com/tech%2Fpower.svg
+}
+
+smoke0 : smoke0 {
+  icon: https://icons.d2lang.com/essentials%2F104-wifi.svg
+}
+
+tmo : T-Mobile {
+  icon: https://icons.d2lang.com/tech%2Frouter.svg
+}
+
+att : AT&T {
+  icon: https://icons.d2lang.com/tech%2Frouter.svg
+}
+
+outside : Outside Plant {
+  remote : Remote Switching Center {
+    shape: hexagon
+  }
+
+  towerD2 : Tower D2 {
+    shape: hexagon
+  }
+
+  towerD6 : Tower D6 {
+    shape: hexagon
+  }
+}
+
+shadytel : ShadyTel {
+  shape: cloud
+}
+
+table : Work Table {
+  icon: https://icons.d2lang.com/tech%2Fdesktop.svg
+}
+
+net.sw0.20 -> sg0 : 1GBaseT
+net.sw0.16 -> smoke0 : 1GBaseT
+net.sw0.15 -> ups0 : 1GBaseT
+net.sw0.13 -> tmo : 1GBaseT
+net.sw0.14 -> att : 1GBaseT
+net.ccr.sfp3 -> table : AOC+
+net.ccr.sfp4 -> shadytel : 1GBaseSX
+net.ccr.sfp5 -> outside.remote : 10GBaseSR
+net.ccr.sfp6 -> outside.towerD2 : 10GBaseSR
+net.ccr.sfp7 -> outside.towerD6 : 10GBaseSR
